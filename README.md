@@ -30,7 +30,7 @@ brew install docker-machine-driver-xhyve
 Now let's make sure we can get MiniKube started by running the following.  If you are using a different vm-driver you'll need to change the flag to match your installation.
 
 ```
-$minikube start --vm-driver=xhyve                                                                                                                                                                                                                       ⌆ 1   master 
+$ minikube start --vm-driver=xhyve                                                                                                                                                                                                                       ⌆ 1   master 
 Starting local Kubernetes v1.6.0 cluster...
 Starting VM...
 Downloading Minikube ISO
@@ -46,13 +46,13 @@ Downloading Minikube ISO
 Verify everything is ok.
 
 ```
-$minikube status                                                                                                                                                                                                                                        ⌆ 1   master 
+$ minikube status                                                                                                                                                                                                                                        ⌆ 1   master 
 minikubeVM: Running
 localkube: Running
 ```
 
 ```
-$kubectl cluster-info                                                                                                                                                                                                                                   ⌆ 1   master 
+$ kubectl cluster-info                                                                                                                                                                                                                                   ⌆ 1   master 
 Kubernetes master is running at https://192.168.64.4:8443
 ```
 
@@ -91,7 +91,7 @@ curl $(minikube service hello-minikube --url)
 Launch the UI to make it easier to visualize the cluster and the objects we created above.
 
 ```
-$minikube dashboard
+$ minikube dashboard
 Opening kubernetes dashboard in default browser...
 ```
 
