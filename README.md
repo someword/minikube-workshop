@@ -23,6 +23,8 @@ To use MiniKube you need MiniKube itself, kubectl (the kubernetes cli) and a vir
 brew cask install minikube
 brew install kubernetes-cli
 brew install docker-machine-driver-xhyve
+sudo chown root:wheel /usr/local/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+sudo chmod u+s /usr/local/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
 ```
 
 ## Start MiniKube
